@@ -1,0 +1,22 @@
+//variables 
+
+//colors static
+$colorBlack: #000;
+$colorLight: #f7eff1;
+$colorPink: #ffabab;
+$colorMint: #c6e5b1;
+$colorRose: rgb(233, 126, 126);
+$colorRose05: rgba(233, 126, 126, 0.7);
+
+//colors dynamic
+
+$colorPrimary: $colorRose;
+$colorSecondary: $colorLight;
+$colorTertiary: $colorMint;
+$colorFont: $colorBlack;
+
+// fonts
+$font-family-subtitle: amaranth;
+$font-family-title: julian;
+$font-family-description: oswald;
+$font-path: "../fonts";

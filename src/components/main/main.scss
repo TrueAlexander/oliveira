@@ -1,0 +1,144 @@
+@import '../../styles/variables';
+
+.main {
+  padding-top: 45px;
+  background-color: $colorPrimary; 
+  text-align: center;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+  }
+
+  &__item {
+    flex: 0 0 380px;
+  }
+} 
+
+.sectionTitle {
+  margin: 10px auto 30px;
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  font-family: $font-family-subtitle;
+}
+.card {
+  color: #000;
+  padding: 35px;
+  height: 380px;
+  border-radius: 50%; 
+  background-color: $colorSecondary;
+  margin: 0 20px 50px;
+  box-shadow: 0 0 10px $colorSecondary, 0 0 10px $colorTertiary;
+  overflow: hidden;
+  transition: all 0.3s linear 0.1s;
+  
+
+  &__title {
+    font-family: julian, sans-serif;
+    line-height: 1.6em;
+    margin: 0 auto;
+    width: 250px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+  }
+  &__photo {
+    margin: 10px auto 7px;
+    
+    img {
+      height: 190px;
+      width: 190px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 25px $colorTertiary;
+    }
+  }
+  &__description {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.5em;
+    width: 240px;
+    margin: 0 auto;
+    font-family: oswald;
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 10px 10px $colorTertiary;
+  transition: all 0.3s linear 0.1s;
+  cursor: pointer;
+}
+
+@media (max-width: 1290px) {
+  .main {
+  
+    &__item {
+      flex: 0 0 350px;
+    }
+   
+  }
+  
+  .card {
+    height: 350px;
+      
+    &__title {   
+      font-size: 1.5em;   
+    }
+
+    &__photo {
+      margin: 11px auto 7px;
+      
+      img {
+        height: 160px;
+        width: 160px;
+      }
+    }
+
+    &__description {
+      line-height: 1.3em;
+      font-size: 1.5em;
+      width: 230px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding-top: 10px;
+  
+    &__item {
+      flex: 0 0 300px;
+    }
+  }
+
+  .card {
+    height: 300px;
+    margin: 0 20px 30px;
+
+    &__title {
+      margin: -3px auto 0;
+      width: auto;
+    }
+
+    &__photo {
+      margin: 7px auto 7px;
+      
+      img {
+        height: 150px;
+        width: 150px;
+      }
+    }
+
+    &__description {
+      line-height: 1.20em;
+      font-size: 1.25em;
+      width: 190px;
+    }
+  }
+
+  .sectionTitle {
+    font-size: 1.9em;
+  }
+}
