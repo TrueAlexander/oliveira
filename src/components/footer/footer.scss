@@ -1,24 +1,24 @@
-@import '../../styles/variables';
-
+@import "../../styles/variables";
 
 .footer {
-  background-color: $colorPrimary;
+  color: #fff;
+  background-color: #ce470988;
   padding: 15px 0;
   position: relative;
-  
+
   &__logo {
-    position: absolute;   
+    position: absolute;
     img {
       margin: 7px auto;
-      width: 100px;  
+      width: 150px;
     }
   }
 
   &__row {
     display: flex;
-    margin:25px 0 35px auto;
+    margin: 25px 0 35px auto;
     justify-content: center;
-    width: 90%;  
+    width: 90%;
   }
 
   &__item {
@@ -26,24 +26,24 @@
     margin: 0 30px;
     text-align: center;
     font-weight: 700;
-    color: $colorFont;
+    color: #fff;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s linear 0.1s;
-   
+
     img {
       background-color: $colorTertiary;
       border-radius: 50%;
       box-shadow: 0 0 10px $colorTertiary;
-      height: 80%;
+      height: 70%;
       margin-right: 15px;
     }
     p {
       font-size: 18px;
-      font-family: oswald;
-      font-weight: 400;    
+      font-family: $font-family-description;
+      font-weight: 400;
     }
   }
 
@@ -57,40 +57,38 @@
       text-shadow: 0 5px 10px $colorSecondary, 0 5px 20px $colorTertiary;
     }
   }
-} 
+}
 
 @media (max-width: 1290px) {
   .footer {
-  
     &__row {
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
     }
-  
+
     &__item {
       flex: 0 0 40%;
       margin: 0 30px 10px;
     }
-  } 
+  }
 }
 
 @media (max-width: 700px) {
   .footer {
-    
     &__logo {
       bottom: 5px;
-      left: 15px;   
+      left: 15px;
       img {
-        width: 70px;  
+        width: 70px;
       }
     }
-     
+
     &__row {
       margin: 25px auto 50px;
       justify-content: center;
       width: 100%;
     }
-  
-    &__item {  
+
+    &__item {
       flex: 0 0 70%;
       margin: 0 auto 5px;
       height: 40px;
@@ -99,11 +97,10 @@
       justify-content: center;
       p {
         font-size: 1.1em;
-        
       }
       img {
         height: 70%;
       }
     }
-  } 
+  }
 }
