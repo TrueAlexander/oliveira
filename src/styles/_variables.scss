@@ -1,22 +1,22 @@
-//variables 
+//variables
 
 //colors static
 $colorBlack: #000;
-$colorLight: #f7eff1;
-$colorPink: #ffabab;
-$colorMint: #c6e5b1;
-$colorRose: rgb(233, 126, 126);
-$colorRose05: rgba(233, 126, 126, 0.7);
+$colorLightGrey: #cccccc;
+$colorDarkRed: #ce4809;
+$colorGrey: #808080;
+$colorGreyTransp: rgba(128, 128, 128, 0.61);
+$colorDarkRed05: rgba(206, 71, 9, 0.05);
 
 //colors dynamic
 
-$colorPrimary: $colorRose;
-$colorSecondary: $colorLight;
-$colorTertiary: $colorMint;
+$colorPrimary: $colorLightGrey;
+$colorSecondary: $colorGreyTransp;
+$colorTertiary: $colorDarkRed;
 $colorFont: $colorBlack;
 
 // fonts
-$font-family-subtitle: amaranth;
-$font-family-title: julian;
-$font-family-description: oswald;
+$font-family-subtitle: roboto;
+$font-family-title: gothic;
+$font-family-description: roboto;
 $font-path: "../fonts";

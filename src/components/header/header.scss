@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 body.lock {
   overflow: hidden;
@@ -10,50 +10,51 @@ body.lock {
   position: fixed;
   width: 100%;
   background-color: $colorSecondary;
-  height: 240px;
   text-align: center;
   padding-top: 10px;
   z-index: 300;
 
-  &__subtitle {
-    transition: all 0.8s linear 0.05s;
-    font-size: 1.9em;
-    font-family: $font-family-subtitle;
-    font-style: italic;
-  }
+  // &__subtitle {
+  //   transition: all 0.8s linear 0.05s;
+  //   font-size: 1.9em;
+  //   font-family: $font-family-subtitle, sans-serif;
+  //   font-style: italic;
+  // }
 
   &__title {
     transition: all 0.8s linear 0.05s;
     font-weight: 700;
     font-size: 3.7em;
-    margin: 50px auto 35px;
-    font-family: $font-family-title;
-    font-weight: 400;
+    margin: 20px auto 20px;
+    font-family: $font-family-title, sans-serif;
+    font-weight: 700;
   }
 
   img.logo {
     transition: all 0.8s linear 0.05s;
     float: left;
     display: block;
-    height: 220px; 
+    height: 170px;
   }
 
   &__nav {
     z-index: 150;
-    position: absolute;
-    bottom: 20px;
-    left: 55%;
-    transform: translateX(-50%);
+    // position: absolute;
+    // bottom: 20px;
+    // left: 55%;
+    // transform: translateX(-50%);
+
+    margin: 0 auto;
     width: 70%;
     transition: all 0.8s linear 0.05s;
     font-size: 1.5em;
     line-height: 0.7em;
-    font-family: $font-family-subtitle;  
+    font-family: $font-family-subtitle, sans-serif;
   }
 
   &__list {
-    display: flex; 
-    justify-content: space-evenly;    
+    display: flex;
+    justify-content: space-evenly;
   }
 
   &__item {
@@ -62,14 +63,14 @@ body.lock {
     background-color: $colorTertiary;
     padding: 3px;
     transition: all 0.3s linear 0.1s;
-   
+
     a {
       text-transform: uppercase;
       display: block;
       color: black;
       border: 1px solid #000;
       padding: 5px;
-    }      
+    }
   }
 
   &__item:hover {
@@ -84,7 +85,7 @@ body.lock {
     height: 40px;
     position: absolute;
     transition: all 0.8s linear 0.05s;
-    
+
     .burger__inner {
       background-color: #000;
       height: 4px;
@@ -96,7 +97,8 @@ body.lock {
     }
   }
 
-  &__nav_burger::before, &__nav_burger::after {
+  &__nav_burger::before,
+  &__nav_burger::after {
     content: "";
     display: block;
     height: 4px;
@@ -139,7 +141,7 @@ body.lock {
 
   img.logo.scroll {
     transition: all 0.8s linear 0.05s;
-    height: 100px; 
+    height: 100px;
   }
 
   &__nav {
@@ -163,7 +165,7 @@ body.lock {
     }
 
     img.logo {
-      height: 200px; 
+      height: 200px;
     }
   }
 }
@@ -171,17 +173,17 @@ body.lock {
 @media (max-width: 1100px) {
   .header {
     height: 210px;
-  
+
     &__title {
       font-size: 3.3em;
       line-height: 1.2em;
       margin: 10px auto;
     }
-  
+
     img.logo {
-      height: 190px; 
+      height: 190px;
     }
-  } 
+  }
 }
 
 @media (max-width: 883px) {
@@ -191,15 +193,15 @@ body.lock {
     &__subtitle {
       font-size: 1.4em;
     }
-  
+
     &__title {
       font-size: 2.8em;
     }
-  
+
     img.logo {
-      height: 160px; 
+      height: 160px;
     }
-  
+
     &__nav {
       width: 80%;
       margin-left: 25px;
@@ -209,20 +211,19 @@ body.lock {
 
   .scroll.header {
     height: 110px;
-  
+
     &__title {
       font-size: 2.1em;
       margin: 5px auto 20px;
     }
-  
+
     &__nav {
       width: 80%;
     }
-  }  
+  }
 }
 
 @media (max-width: 700px) {
-
   .header {
     height: auto;
     padding-top: 20px;
@@ -248,7 +249,7 @@ body.lock {
       float: none;
       margin-left: 10%;
       height: 100px;
-      z-index: 300;  
+      z-index: 300;
     }
 
     &__nav_burger {
@@ -295,8 +296,6 @@ body.lock {
       z-index: 200;
       font-size: 1.5em;
       line-height: 1em;
-      
-      
     }
 
     &__list {
@@ -307,10 +306,9 @@ body.lock {
       padding-bottom: 15px;
       text-shadow: 5px 5px 10px $colorPrimary, 5px 5px 10px black;
       box-shadow: 0 5px 10px $colorSecondary;
-      
+
       border-radius: 0 0 50% 50%;
       height: 300px;
-      
     }
 
     &__item {
@@ -319,13 +317,12 @@ body.lock {
       text-align: center;
       margin: 0;
       padding: 0;
-      
-      
+
       a {
         color: #fff;
         border: none;
         padding: 20px;
-      }      
+      }
     }
     &__item:hover {
       box-shadow: none;
@@ -355,16 +352,13 @@ body.lock {
       left: 50%;
     }
 
-   
     &__nav_burger {
       top: 20px;
       transition: all 0.8s linear 0.05s;
     }
 
     img.logo.scroll {
-      height: 80px; 
+      height: 80px;
     }
   }
 }
-
-

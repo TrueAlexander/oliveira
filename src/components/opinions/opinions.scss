@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 body {
   background-color: $colorSecondary;
@@ -6,8 +6,9 @@ body {
 .opinions {
   padding-top: 20px;
   position: relative;
-  
-  .swiper-button-prev, .swiper-button-next {
+
+  .swiper-button-prev,
+  .swiper-button-next {
     color: rgba(0, 0, 0, 0.7);
     top: 60%;
     position: absolute;
@@ -19,8 +20,9 @@ body {
   .swiper-button-next {
     right: 20px;
   }
-  
-  .swiper-button-prev:hover, .swiper-button-next:hover {
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
     color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -43,37 +45,36 @@ body {
       border: 7px solid $colorSecondary;
       border-radius: 20px;
       padding: 15px;
-      text-align: center; 
+      text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center; 
-      transition: all 0.3s linear 0.1s;   
+      justify-content: center;
+      transition: all 0.3s linear 0.1s;
     }
     .swiper-slide:hover {
       transition: all 0.3s linear 0.1s;
       box-shadow: 0 7px 15px $colorTertiary;
       transform: translateY(-7px) scale(1.01);
       cursor: grabbing;
-
     }
   }
 
   &-opinion {
-    font-family: oswald;
+    font-family: oswald, sans-serif;
     line-height: 1.4em;
     font-size: 1.3em;
     flex: 1 1 auto;
   }
-  &-opinion:before, &-opinion:after {
+  &-opinion:before,
+  &-opinion:after {
     content: ' " ';
   }
 
   &-client {
     text-transform: uppercase;
     margin: 10px auto;
-    font-family: julian;
+    font-family: julian, sans-serif;
     font-size: 1.2em;
-
   }
 
   &-city {
@@ -85,21 +86,18 @@ body {
   &-pagination {
     .swiper-pagination-bullet-active {
       background-color: rgba(0, 0, 0, 0.7);
-    }   
-  }
-}
-
-
-@media (max-width: 883px) {
- 
-  .swiper {
-    height: auto;
-   
-    &-wrapper {
-      .swiper-slide {
-        height: auto;  
-      }
     }
   }
 }
 
+@media (max-width: 883px) {
+  .swiper {
+    height: auto;
+
+    &-wrapper {
+      .swiper-slide {
+        height: auto;
+      }
+    }
+  }
+}

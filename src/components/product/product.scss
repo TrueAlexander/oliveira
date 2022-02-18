@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 body {
   display: flex;
@@ -11,7 +11,7 @@ body {
 
   &__box {
     margin-top: 0px;
-    padding-top: 230px; 
+    padding-top: 230px;
   }
 
   &__card {
@@ -26,7 +26,6 @@ body {
   &__row {
     display: flex;
     align-items: center;
- 
   }
 
   &__photo {
@@ -47,14 +46,13 @@ body {
 
   &__description {
     flex: 0 0 50%;
-    font-family: oswald;
+    font-family: oswald, sans-serif;
     padding: 20px;
     overflow: hidden;
     text-align: justify;
     text-indent: 30px;
     line-height: 1.7em;
     font-size: 1.3em;
-   
   }
   &__price {
     margin-top: 30px;
@@ -63,36 +61,32 @@ body {
       display: inline-block;
       margin-right: 10px;
     }
-
-    
   }
   .price {
     color: $colorPrimary;
   }
-} 
+}
 
-@media (max-width:700px) {
-
+@media (max-width: 700px) {
   .product {
-
     &__box {
       margin-top: 0px;
-      padding-top: 195px; 
+      padding-top: 195px;
     }
 
     &__row {
       display: block;
     }
-    
+
     &__card {
       padding: 5px 15px 10px;
-      margin: 20px auto 15px;  
+      margin: 20px auto 15px;
     }
 
     &__photo {
-      height: 250px; 
+      height: 250px;
     }
-  
+
     &__description {
       padding: 10px 10px;
       line-height: 1.3em;
@@ -106,11 +100,6 @@ body {
         display: inline-block;
         margin-right: 10px;
       }
-   
     }
-   
   }
- 
 }
-
-
