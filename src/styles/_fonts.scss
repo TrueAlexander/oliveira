@@ -56,3 +56,21 @@
   font-weight: 400;
   src: url(#{$font-path}/#{$font-name}.ttf);
 }
+
+//montserrat
+
+@font-face {
+  $font-name: "Montserrat-ExtraLight";
+  font-family: montserrat;
+  font-weight: 200;
+  src: url(#{$font-path}/#{$font-name}.ttf);
+}
+
+//robotoSlab
+
+@font-face {
+  $font-name: "RobotoSlab-Light";
+  font-family: robotoSlab;
+  font-weight: 300;
+  src: url(#{$font-path}/#{$font-name}.ttf);
+}

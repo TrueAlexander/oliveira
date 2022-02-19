@@ -82,6 +82,8 @@ body.lock {
     height: 40px;
     position: absolute;
     transition: all 0.8s linear 0.05s;
+    top: 35px;
+    right: 10%;
 
     .burger__inner {
       background-color: #000;
@@ -121,18 +123,6 @@ body.lock {
   position: fixed;
   width: 100%;
   z-index: 300;
-
-  // &__subtitle {
-  //   display: none;
-  //   transition: all 0.8s linear 0.05s;
-  // }
-
-  // &__title {
-  //   font-size: 2.4em;
-  //   margin: 10px auto 20px;
-  //   transition: all 0.8s linear 0.05s;
-  // }
-
   img.logo.scroll {
     transition: all 0.8s linear 0.05s;
     height: 100px;
@@ -146,124 +136,41 @@ body.lock {
   }
 }
 
-@media (max-width: 1290px) {
-  .header {
-    height: 220px;
-
-    &__subtitle {
-      font-size: 1.6em;
-    }
-
-    &__title {
-      font-size: 3.5em;
-    }
-
-    img.logo {
-      height: 200px;
-    }
-  }
-}
-
 @media (max-width: 1100px) {
   .header {
-    height: 210px;
-
-    &__title {
-      font-size: 3.3em;
-      line-height: 1.2em;
-      margin: 10px auto;
-    }
-
     img.logo {
-      height: 190px;
-    }
-  }
-}
-
-@media (max-width: 883px) {
-  .header {
-    height: 200px;
-
-    &__subtitle {
-      font-size: 1.4em;
-    }
-
-    &__title {
-      font-size: 2.8em;
-    }
-
-    img.logo {
-      height: 160px;
+      height: 120px;
+      margin-right: 0;
     }
 
     &__nav {
-      width: 80%;
-      margin-left: 25px;
-      bottom: 15px;
-    }
-  }
-
-  .scroll.header {
-    height: 110px;
-
-    &__title {
-      font-size: 2.1em;
-      margin: 5px auto 20px;
+      transform: translateY(45px);
+      font-size: 1.1em;
     }
 
-    &__nav {
-      width: 80%;
+    &__item {
+      a {
+        padding: 3px;
+      }
     }
   }
 }
 
 @media (max-width: 700px) {
   .header {
-    height: auto;
-    padding-top: 20px;
-    z-index: 300;
-
-    &__subtitle {
-      transition: all 0.8s linear 0.05s;
-      font-size: 1.2em;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &__title {
-      font-size: 1.8em;
-      line-height: 1.1em;
-      margin: 10px auto 15px;
-    }
-
     img.logo {
-      float: none;
-      margin-left: 10%;
       height: 100px;
-      z-index: 300;
     }
 
     &__nav_burger {
       display: block;
-      right: 10%;
-      top: 50px;
-      z-index: 300;
     }
 
     &__nav_burger.dropped {
       transition: all 0.8s linear 0.05s;
 
       .burger__inner {
-        display: block;
-        background-color: #000;
-        height: 5px;
-        width: 100%;
-        margin: 50% 0;
         transform: scale(0);
-        box-shadow: 0 4px 8px $colorTertiary;
         transition: all 0.8s linear 0.05s;
       }
     }
@@ -281,28 +188,17 @@ body.lock {
     &__nav {
       position: absolute;
       display: block;
-      top: 80px;
+      top: 45px;
       left: 250%;
-      width: 100%;
-      transform: translateX(-50%);
-      padding: 0;
-      margin: 0;
-      z-index: 200;
-      font-size: 1.5em;
-      line-height: 1em;
     }
 
     &__list {
       display: block;
-      margin: 0;
-      padding: 0;
-      background-color: rgba(236, 236, 126, 0.95);
-      padding-bottom: 15px;
-      text-shadow: 5px 5px 10px $colorPrimary, 5px 5px 10px black;
-      box-shadow: 0 5px 10px $colorSecondary;
-
+      background-color: #ce4709b9;
+      text-shadow: 0 3px 10px $colorPrimary;
+      box-shadow: 0 5px 5px $colorSecondary;
       border-radius: 0 0 50% 50%;
-      height: 300px;
+      padding-bottom: 15px;
     }
 
     &__item {
@@ -324,26 +220,14 @@ body.lock {
   }
 
   .scroll.header {
-    height: auto;
-    z-index: 300;
-
-    &__subtitle {
-      display: none;
-      transition: all 0.8s linear 0.05s;
-    }
-
-    &__title {
-      display: none;
-    }
     &__nav {
-      top: 80px;
       width: 100%;
       font-size: 1.5em;
-      line-height: 1em;
+      line-height: 0.6em;
     }
 
     &__nav.dropped {
-      left: 50%;
+      left: 0;
     }
 
     &__nav_burger {
