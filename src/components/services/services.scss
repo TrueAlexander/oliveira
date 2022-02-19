@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
-.main {
+.services {
   padding-top: 45px;
   background-color: $colorPrimary;
   text-align: center;
@@ -12,22 +12,22 @@
   }
 
   &__item {
-    flex: 0 0 380px;
+    flex: 0 0 45%;
   }
 }
 
 .sectionTitle {
   margin: 10px auto 30px;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.7em;
+  font-weight: 600;
   text-transform: capitalize;
   font-family: $font-family-subtitle, sans-serif;
 }
 .card {
-  color: #000;
-  padding: 35px;
-  height: 380px;
-  border-radius: 50%;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
   background-color: $colorSecondary;
   margin: 0 20px 50px;
   box-shadow: 0 0 10px $colorSecondary, 0 0 10px $colorTertiary;
@@ -35,31 +35,32 @@
   transition: all 0.3s linear 0.1s;
 
   &__title {
-    font-family: julian, sans-serif;
+    font-family: $font-family-subtitle, sans-serif;
+    font-weight: 600;
     line-height: 1.6em;
     margin: 0 auto;
     width: 250px;
-    font-size: 1.6em;
+    font-size: 1.5em;
     text-transform: uppercase;
   }
   &__photo {
     margin: 10px auto 7px;
 
     img {
-      height: 190px;
-      width: 190px;
-      border-radius: 50%;
+      height: 380px;
+      border-radius: 7px;
       overflow: hidden;
       box-shadow: 0 0 25px $colorTertiary;
     }
   }
   &__description {
-    text-align: center;
+    padding: 20px;
+    text-indent: 50px;
+    text-align: justify;
     line-height: 1.3em;
     font-size: 1.5em;
-    width: 240px;
     margin: 0 auto;
-    font-family: oswald, sans-serif;
+    font-family: $font-family-description, sans-serif;
   }
 }
 
@@ -71,7 +72,7 @@
 }
 
 @media (max-width: 1290px) {
-  .main {
+  .services {
     &__item {
       flex: 0 0 350px;
     }
@@ -102,7 +103,7 @@
 }
 
 @media (max-width: 700px) {
-  .main {
+  .services {
     padding-top: 10px;
 
     &__item {

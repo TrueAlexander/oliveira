@@ -1,18 +1,15 @@
 //components styles
-@use './container';
-@use '../components/header/header';
-@use '../components/footer/footer';
-@use '../components/main/main';
-@use '../components/opinions/opinions';
-@use '../components/mission/mission';
-@use '../components/product/product';
+@use "./container";
+@use "../components/header/header";
+@use "../components/footer/footer";
+@use "../components/services/services";
+@use "../components/opinions/opinions";
+@use "../components/mission/mission";
+@use "../components/product/product";
 
 //import fonts and variables
-@import 'fonts';
-@import 'variables';
-
+@import "fonts";
+@import "variables";
 
 //reset default CSS
-@import 'nullstyle';
-
-
+@import "nullstyle";

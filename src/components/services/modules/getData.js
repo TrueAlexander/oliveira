@@ -1,5 +1,5 @@
 const getData = () => {
-  return fetch(`https://db-jabones-default-rtdb.firebaseio.com/goods.json`)
+  return fetch(`https://oliveira-db-default-rtdb.firebaseio.com/services.json`)
 
     .then((response) => {
       return response.json();
