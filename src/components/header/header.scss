@@ -13,22 +13,6 @@ body.lock {
   text-align: center;
   z-index: 300;
 
-  // &__subtitle {
-  //   transition: all 0.8s linear 0.05s;
-  //   font-size: 1.9em;
-  //   font-family: $font-family-subtitle, sans-serif;
-  //   font-style: italic;
-  // }
-
-  // &__title {
-  //   transition: all 0.8s linear 0.05s;
-  //   font-weight: 700;
-  //   font-size: 3.7em;
-  //   margin: 20px auto 20px;
-  //   font-family: $font-family-title, sans-serif;
-  //   font-weight: 700;
-  // }
-
   img.logo {
     transition: all 0.8s linear 0.05s;
     float: left;
@@ -50,7 +34,7 @@ body.lock {
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   &__item {
