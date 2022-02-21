@@ -10,7 +10,7 @@ body {
   .swiper-button-prev,
   .swiper-button-next {
     color: rgba(0, 0, 0, 0.7);
-    top: 60%;
+    top: 58%;
     position: absolute;
     z-index: 20;
   }
@@ -43,7 +43,7 @@ body {
       background-color: $colorTertiary;
       height: 250px;
       overflow: hidden;
-      border: 7px solid $colorSecondary;
+      border: 7px solid $colorLightGrey;
       border-radius: 20px;
       padding: 15px;
       text-align: center;

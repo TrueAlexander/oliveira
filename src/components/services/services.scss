@@ -26,10 +26,10 @@
   font-family: $font-family-subtitle, sans-serif;
 }
 .card {
-  color: #fff;
-  border-radius: 15px;
+  color: $colorTertiary;
+  border-radius: 7px;
   padding: 10px;
-  background-color: $colorSecondary;
+  background-image: url("/images/fundo03.jpg");
   margin: 0 20px 50px;
   box-shadow: 0 0 10px $colorSecondary, 0 0 10px $colorTertiary;
   overflow: hidden;
@@ -38,38 +38,38 @@
   &__title {
     font-family: $font-family-subtitle, sans-serif;
     font-weight: 600;
-    line-height: 1.6em;
+    line-height: 1.2em;
     margin: 0 auto;
-    width: 250px;
     font-size: 1.5em;
     text-transform: uppercase;
   }
   &__photo {
-    margin: 10px auto 7px;
+    margin: 10px auto 0;
 
     img {
       height: 380px;
       border-radius: 7px;
       overflow: hidden;
-      box-shadow: 0 0 25px $colorTertiary;
+      box-shadow: 0 0 10px #000;
     }
   }
   &__description {
     padding: 20px;
     text-indent: 50px;
     text-align: justify;
-    line-height: 1.3em;
-    font-size: 1.5em;
+    line-height: 1.2em;
+    font-size: 1.1em;
     margin: 0 auto;
-    font-family: $font-family-description, sans-serif;
+    font-family: $font-family-title, sans-serif;
+    font-weight: 600;
   }
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.04);
-  box-shadow: 0 10px 10px $colorTertiary;
-  transition: all 0.3s linear 0.1s;
-  cursor: pointer;
+  // transform: translateY(-10px) scale(1.04);
+  // box-shadow: 0 10px 10px $colorTertiary;
+  // transition: all 0.3s linear 0.1s;
+  // cursor: pointer;
 }
 
 @media (max-width: 1290px) {
