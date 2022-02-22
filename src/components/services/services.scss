@@ -1,9 +1,9 @@
 @import "../../styles/variables";
 
 .services {
-  padding-top: 45px;
   background-color: $colorPrimary;
   text-align: center;
+  background-image: url("/images/fundo01.jpg");
 
   &__box {
     display: flex;
@@ -12,11 +12,12 @@
   }
 
   &__item {
-    flex: 0 0 45%;
+    flex: 0 0 40%;
   }
 }
 
 .sectionTitle {
+  padding-top: 95px;
   margin: 10px auto 30px;
   color: #fff;
   text-align: center;
@@ -24,14 +25,15 @@
   font-weight: 600;
   text-transform: capitalize;
   font-family: $font-family-subtitle, sans-serif;
+  text-shadow: 0 0 10px $colorTertiary;
 }
 .card {
   color: $colorTertiary;
   border-radius: 7px;
   padding: 10px;
   background-image: url("/images/fundo03.jpg");
-  margin: 0 20px 50px;
-  box-shadow: 0 0 10px $colorSecondary, 0 0 10px $colorTertiary;
+  margin: 0 60px 50px;
+  box-shadow: 0 0 10px $colorSecondary, 0 0 10px #000;
   overflow: hidden;
   transition: all 0.3s linear 0.1s;
 
@@ -44,10 +46,10 @@
     text-transform: uppercase;
   }
   &__photo {
-    margin: 10px auto 0;
+    margin: 15px auto 0;
 
     img {
-      height: 380px;
+      height: 340px;
       border-radius: 7px;
       overflow: hidden;
       box-shadow: 0 0 10px #000;
@@ -60,8 +62,8 @@
     line-height: 1.2em;
     font-size: 1.1em;
     margin: 0 auto;
-    font-family: $font-family-title, sans-serif;
-    font-weight: 600;
+    font-family: $font-family-subtitle, sans-serif;
+    font-weight: 400;
   }
 }
 

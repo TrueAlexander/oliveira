@@ -6,6 +6,10 @@
   padding: 15px 0;
   position: relative;
 
+  &__title.sectionTitle {
+    padding-top: 0;
+  }
+
   &__logo {
     position: absolute;
     img {

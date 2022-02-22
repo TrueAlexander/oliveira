@@ -5,3 +5,7 @@ import './components/services/services.js';
 import './components/obras/obras.js';
 import './components/opinions/opinions.js';
 
+import scrollTo from './scrollTo';
+
+scrollTo();
+
