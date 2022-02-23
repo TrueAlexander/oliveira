@@ -7,5 +7,6 @@ import './components/opinions/opinions.js';
 
 import scrollTo from './scrollTo';
 
+
 scrollTo();
 

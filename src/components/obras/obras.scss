@@ -1,18 +1,5 @@
 @import "../../styles/variables";
 
-// style=">
-
-// body {
-//   font-family: 'Muli', sans-serif;
-//   overflow: hidden;
-//   margin: 0;
-//   background: rgb(189, 247, 255);
-//   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 .obras {
   padding: 10px 0 40px;
   &__box {
@@ -23,9 +10,9 @@
 
 .slide {
   font-family: $font-family-title;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2.6em;
-  height: 65vh;
+  height: 50vh;
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
@@ -33,7 +20,7 @@
   color: #fff;
   text-shadow: 0 0 10px $colorTertiary;
   flex: 1;
-  background-image: url("https://images.unsplash.com/photo-1586354822120-bf910e563cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  // background-image: url("https://images.unsplash.com/photo-1586354822120-bf910e563cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +39,7 @@
 }
 
 .slide.active {
-  flex: 10;
+  flex: 9;
 }
 
 .slide.active h3 {

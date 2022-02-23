@@ -11,7 +11,7 @@ const scrollTo = () => {
       const id = element.getAttribute('href').substring(13)
       
       const target = document.getElementById(id)
-      console.log(target);
+     
 
       elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" });
 
