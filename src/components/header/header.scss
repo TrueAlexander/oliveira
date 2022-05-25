@@ -17,7 +17,7 @@ body.lock {
     transition: all 0.8s linear 0.05s;
     float: left;
     display: block;
-    height: 155px;
+    height: 125px;
     padding: 0 0 15px;
     margin-right: 40px;
   }
@@ -25,7 +25,7 @@ body.lock {
   &__nav {
     z-index: 150;
     margin: auto;
-    transform: translateY(70px);
+    transform: translateY(50px);
     transition: all 0.8s linear 0.05s;
     font-size: 1.3em;
     line-height: 0.7em;
