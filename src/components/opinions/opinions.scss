@@ -1,36 +1,33 @@
 @import "../../styles/variables";
 
-body {
-  background-color: $colorSecondary;
-}
+
 .opinions {
-  padding-top: 20px;
   position: relative;
   background-image: url("/images/fundo03.jpg");
 
   .swiper-button-prev,
   .swiper-button-next {
     color: rgba(0, 0, 0, 0.7);
-    top: 58%;
+    top: 63%;
     position: absolute;
     z-index: 20;
   }
   .swiper-button-prev {
-    left: 20px;
+    left: 5%;
   }
   .swiper-button-next {
-    right: 20px;
+    right: 5%;
   }
 
   .swiper-button-prev:hover,
   .swiper-button-next:hover {
-    color: rgba(0, 0, 0, 0.5);
+    color: $colorTertiary;
   }
 }
 .swiper {
   color: #fff;
   max-width: 90%;
-  height: 295px;
+  height: 350px;
   border-radius: 20px;
   box-shadow: 0 0 50px $colorPrimary;
   margin: 30px auto 45px;
@@ -42,7 +39,7 @@ body {
 
     .swiper-slide {
       background-color: $colorTertiary;
-      height: 250px;
+      height: 300px;
       overflow: hidden;
       border: 7px solid $colorLightGrey;
       border-radius: 20px;

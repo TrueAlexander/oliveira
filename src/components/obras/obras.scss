@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .obras {
-  padding: 10px 0 40px;
+  padding: 0 0 40px;
   &__box {
     display: flex;
     padding: 0 20px;
@@ -21,7 +21,6 @@
   color: #fff;
   text-shadow: 0 0 10px $colorTertiary;
   flex: 1;
-  // background-image: url("https://images.unsplash.com/photo-1586354822120-bf910e563cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +30,7 @@
 
 .slide h3 {
   position: absolute;
-  font-size: 24px;
+  font-size: 20px;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -40,8 +39,10 @@
   background-color: $colorTertiary;
   padding: 5px 15px;
   border-radius: 25px;
-  border: 1px solid white;
+  border: 2px solid white;
   line-height: 1.3em;
+  box-shadow: 0 0 5px $colorSecondary, 0 0 5px #000;
+  font-weight: 600;
 }
 
 .slide.active {

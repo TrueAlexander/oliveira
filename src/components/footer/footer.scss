@@ -2,14 +2,11 @@
 
 .footer {
   color: #fff;
-  background-color: #ce470988;
-  padding: 15px 0;
   position: relative;
 
-  &__title.sectionTitle {
-    padding-top: 0;
+  &__title {
+    margin-top: 20px;
   }
-
   &__logo {
     position: absolute;
     img {
@@ -20,7 +17,7 @@
 
   &__row {
     display: flex;
-    margin: 25px 0 35px auto;
+    margin: 25px 0 60px auto;
     justify-content: center;
     width: 90%;
     padding-left: 50px;
@@ -50,6 +47,8 @@
       font-family: $font-family-description;
       font-weight: 400;
     }
+
+    
   }
 
   &__item:hover {
@@ -60,6 +59,39 @@
     }
     p {
       text-shadow: 0 5px 10px $colorSecondary, 0 5px 20px $colorTertiary;
+    }
+  }
+
+  &__copyright {
+    width: fit-content;
+    margin: 0 0 0 auto;
+    padding-bottom: 20px;
+    
+    p {
+      
+      font-family: roboto, Arial, Helvetica, sans-serif;
+      text-transform: lowercase;
+      line-height: 30px;
+      position: relative;
+      a {
+        text-transform: none;
+        color: inherit;
+        font-size: inherit;
+      }
+    }
+
+    p::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: -35px;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url("../../src/faviconEformaliza.ico");
+      background-position: center;
+      background-size: contain;
+      border-radius: 50%;
     }
   }
 }
