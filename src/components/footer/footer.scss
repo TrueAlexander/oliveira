@@ -34,13 +34,13 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s linear 0.1s;
+    border-radius: 50%;
 
     img {
-      background-color: $colorTertiary;
-      border-radius: 50%;
-      box-shadow: 0 0 10px $colorTertiary;
-      height: 70%;
+      height: 90%;
+      width: fit-content;
       margin-right: 15px;
+      
     }
     p {
       font-size: 18px;
@@ -55,10 +55,11 @@
     transform: translateY(-2px) scale(1.04);
     transition: all 0.3s linear 0.1s;
     img {
-      box-shadow: 0 5px 10px $colorSecondary, 0 5px 20px $colorTertiary;
+      border-radius: 50%;
+      box-shadow: 0 0 2px $colorSecondary, 0 0 4px white;
     }
     p {
-      text-shadow: 0 5px 10px $colorSecondary, 0 5px 20px $colorTertiary;
+      text-shadow: 0 0 2px $colorSecondary, 0 0 4px white;
     }
   }
 
