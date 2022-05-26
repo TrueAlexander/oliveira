@@ -13,14 +13,13 @@
     height: 100vh;
     color: white;
     font-size: 2.4em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
     font-weight: 700;
     text-shadow: 0 0 3px $colorPrimary;
     line-height: 1.5em;
   }
 
   &__title {
-    
   }
   &__description {
     background-color: $colorSecondary;

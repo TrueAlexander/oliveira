@@ -31,7 +31,8 @@
   color: $colorTertiary;
   border-radius: 7px;
   padding: 10px;
-  background-image: url("/images/fundo03.jpg");
+  // background-image: url("/images/fundo03.jpg");
+  background-color: rgba(152, 152, 152, 0.371);
   margin: 0 60px 50px;
   box-shadow: 0 0 10px $colorSecondary, 0 0 10px #000;
   overflow: hidden;
@@ -60,7 +61,7 @@
     text-indent: 50px;
     text-align: justify;
     line-height: 1.2em;
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin: 0 auto;
     font-family: $font-family-subtitle, sans-serif;
     font-weight: 400;

@@ -13,6 +13,7 @@
   font-weight: 700;
   line-height: 2.6em;
   height: 50vh;
+  border:1px solid white;
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
@@ -36,6 +37,11 @@
   transform: translateX(-50%);
   margin: 0;
   opacity: 0;
+  background-color: $colorTertiary;
+  padding: 5px 15px;
+  border-radius: 25px;
+  border: 1px solid white;
+  line-height: 1.3em;
 }
 
 .slide.active {
