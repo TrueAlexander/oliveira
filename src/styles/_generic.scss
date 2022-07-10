@@ -1,0 +1,99 @@
+@import "variables";
+
+body {
+  background-color: $colorSecondary;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-shadow: 0 0px 2px $colorTertiary;
+}
+
+.title, 
+.sectionTitle {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 2px $colorPrimary;
+  text-transform: uppercase;
+  line-height: 1.25em;
+  font-weight: 600;
+  padding: 0 20px;
+  border-radius: 35px;
+  border: 2px solid white;
+  margin: 0 auto 60px;
+  background-color: $colorTertiary;
+  width: fit-content;
+  box-shadow: 0 0 5px $colorSecondary, 0 0 5px #000;
+}
+
+.sectionTitle {
+  padding: 0 20px;
+  line-height: 1.5em;
+  margin-top: 120px;
+  letter-spacing: 0.08em;
+  font-size: 23px;
+
+}
+
+.btn {
+
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: $colorTertiary;
+  transition: all 0.3s linear 0.1s;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 22px;
+  font-family: $font-family-subtitle,sans-serif;
+  width: fit-content;
+  letter-spacing: 0.05em;
+}
+
+
+.btn:hover {
+  box-shadow: 0 0px 7px white;
+  transform: scale(1.02);
+  text-shadow: 0 0 2px white;
+  transition: all 0.2s linear 0.1s;
+}
+
+
+////////
+/// 
+/// 
+li.header__item.option1 {
+  background-color: $colorPrimary;
+  a {
+    color: $colorTertiary;
+    text-shadow: none;
+    font-weight: 700;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+}
+
+li.header__item.option2 {
+  background-color: $colorSecondary;
+  font-family: montserrat;
+  border: 1px solid $colorTertiary;
+
+}
+
+li.header__item.option3 {
+  background-color: rgba(0, 0, 0, 0.468);
+  font-family: montserrat;
+}
+
+li.header__item.option4 {
+  border: none;
+  border-radius: 5px;
+  padding-top: 4px;
+
+}

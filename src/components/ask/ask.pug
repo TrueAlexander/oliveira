@@ -1,24 +1,28 @@
 .ask#ask
   .container
-    p.ask__title.title SOLICITE UMA CONVERSA SEM COMPROMISSO:
+    p.ask__title.sectionTitle FALE CONOSCO:
     .ask__box
       .ask__image
-        img(src=require("../../../images/student_asking_question.svg"), alt="ask") 
-      form.ask__form.form(action="https://formsubmit.co/contato@eformaliza.com" method="POST")
-        .form__label
-          label(for="name") Seu nome
+        img(src=require("../../../images/ask2.png"), alt="ask") 
+      form.ask__form.form(action="https://formsubmit.co/caminante.msk@gmail.com" method="POST")
+        //- .form__label
+        //-   label(for="nome") Seu nome
         .form__input 
-          input(type="text" placeholder="nome" name="name" required)
-        .form__label
-          label(for="name") Seu telefone
+          input(type="text" placeholder="nome" name="nome" required)
+        //- .form__label
+        //-   label(for="telefone") Seu telefone
         .form__input
-          input(type="phone" placeholder="telefone" name="phone" required)
-        .form__label
-          label(for="email") Seu email
+          input(type="tel" placeholder="telefone" name="telefone" required)
+        //- .form__label
+        //-   label(for="email") Seu email
         .form__input
           input(type="email" placeholder="email" name="email" required)
-        input(type="hidden" name="_subject" value="Legal!!!!! Um novo e-mail de eformaliza.com!!!!")
-        input(type="hidden" name="_next" value="https://eformaliza.com/emailSent.html")
+        //- .form__label
+        //-   label(for="pergunta") Sua pergunta
+        .form__input
+          input(type="textarea" rows="2" placeholder="sua pergunta" name="pergunta" required)
+        input(type="hidden" name="_subject" value="Um novo e-mail de cliente!!!!")
+        input(type="hidden" name="_next" value="http://localhost:8080/emailSent.html")
         input(type="hidden" name="_template" value="table")
         input(type="hidden" name="_captcha" value="false")
         button.form__btn.btn(type="submit") Solicitar!  

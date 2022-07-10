@@ -9,7 +9,7 @@ body.lock {
   display: block;
   position: fixed;
   width: 100%;
-  background-color: $colorSecondary;
+  // background-color: $colorSecondary;
   text-align: center;
   z-index: 300;
 
@@ -17,15 +17,16 @@ body.lock {
     transition: all 0.8s linear 0.05s;
     float: left;
     display: block;
-    height: 125px;
-    padding: 0 0 15px;
+    margin-top: 10px;
+    height: 155px;
+    padding: 0 0 10px;
     margin-right: 40px;
   }
 
   &__nav {
     z-index: 150;
     margin: auto;
-    transform: translateY(50px);
+    transform: translateY(70px);
     transition: all 0.8s linear 0.05s;
     font-size: 1.3em;
     line-height: 0.7em;
@@ -108,10 +109,12 @@ body.lock {
   position: fixed;
   width: 100%;
   z-index: 300;
+  background-color: $colorSecondary;
   img.logo.scroll {
     transition: all 0.8s linear 0.05s;
     height: 100px;
     padding: 0 0 7px;
+    margin-top: 0;
   }
 
   &__nav {

@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.thanks {
+ 
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  
+  &__box {
+    padding: 20px;
+    background-color: $colorPrimary;
+    box-shadow: 0 0 3px white;
+    border-radius: 30px;
+    width: 60vw;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    h1 {
+      color: $colorTertiary;
+      text-shadow: 0 0 5px white;
+      line-height: 1.3em;
+      font-size: 2em;
+      font-family: $font-family-title, Arial, Helvetica, sans-serif;
+      margin: 10px 0;
+      font-weight: 700;
+
+    }
+  }
+  &__btn {
+    margin: 50px auto 0;
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 700px) {
+  .thanks {
+    &__box {
+      
+      h1 {
+        font-size: 1.5em;
+        line-height: 1.1em;
+        margin: 7px 0;
+      }
+    }
+
+    &__btn {
+      margin: 25px auto 0;
+      transform: scale(1.2);
+    }
+  }
+}

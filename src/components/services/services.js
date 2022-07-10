@@ -1,7 +1,8 @@
 import load from "./modules/load";
 // import loadProduct from "./modules/loadProduct";
 
-load();
+
+if (!window.location.href.indexOf("emailSent") > -1) load()
 
 // setTimeout(chooseProduct, 3000)
 
