@@ -50,6 +50,27 @@
       justify-content: center;
       transition: all 0.3s linear 0.1s;
     }
+
+    .swiper-slide.option2 {
+      font-family: montserrat;
+      .swiper-opinion {
+        font-family: montserrat;
+        line-height: 1.3em;
+      }
+    }
+
+    .swiper-slide.option1 {
+      background-color: $colorSecondary;
+      .swiper-opinion {
+        font-size: 1.5em;
+        line-height: 1.3em;
+      }
+    }
+
+    .swiper-slide.option3 {
+      background-color: rgba(0, 0, 0, 0.692);
+    }
+
     .swiper-slide:hover {
       transition: all 0.3s linear 0.1s;
       box-shadow: 0 7px 15px $colorTertiary;

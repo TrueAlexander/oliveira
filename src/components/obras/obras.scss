@@ -36,13 +36,16 @@
   transform: translateX(-50%);
   margin: 0;
   opacity: 0;
-  background-color: $colorTertiary;
-  padding: 5px 15px;
+  // background-color: $colorTertiary;
+  background-color: $colorSecondary;
+  // padding: 5px 15px;
+  padding: 3px 10px;
   border-radius: 25px;
-  border: 2px solid white;
+  // border: 2px solid white;
   line-height: 1.3em;
   box-shadow: 0 0 5px $colorSecondary, 0 0 5px #000;
   font-weight: 600;
+  text-shadow: none;
 }
 
 .slide.active {

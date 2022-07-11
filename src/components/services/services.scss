@@ -8,35 +8,38 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
   }
 
-  &__item {
-    flex: 0 0 40%;
-  }
+  // &__item {
+  //   flex: 0 0 40%;
+  // }
 }
 
 .card {
-  border: 2px solid white;
-  color: $colorTertiary;
+  // border: 2px solid white;
+  display: flex;
+  align-items: center;
+  color: white;
   border-radius: 7px;
   padding: 10px;
-  background-color: rgba(152, 152, 152, 0.371);
+  background-color: rgba(152, 152, 152, 0.779);
   margin: 0 60px 50px;
-  box-shadow: 0 0 10px $colorSecondary, 0 0 10px #000;
+  box-shadow: 0 0 7px $colorSecondary, 0 0 10px #000;
   overflow: hidden;
   transition: all 0.3s linear 0.1s;
 
   &__title {
-    font-family: $font-family-subtitle, sans-serif;
+    font-family: montserrat, sans-serif;
     font-weight: 600;
     line-height: 1.2em;
     margin: 0 auto;
     font-size: 1.5em;
     text-transform: uppercase;
-    text-shadow: 0 0 3px white;
+    // text-shadow: 0 0 3px white;
   }
   &__photo {
-    margin: 15px auto 0;
+    margin: 0 auto 0;
    
     img {
       height: 340px;
@@ -50,12 +53,12 @@
     padding: 20px;
     text-indent: 50px;
     text-align: justify;
-    line-height: 1.2em;
-    font-size: 1.3em;
+    line-height: 1.3em;
+    font-size: 1.5em;
     margin: 0 auto;
     font-family: $font-family-subtitle, sans-serif;
     font-weight: 400;
-    text-shadow: 0 0 3px white;
+    // text-shadow: 0 0 3px white;
     
   }
 }

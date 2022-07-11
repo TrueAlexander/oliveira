@@ -20,19 +20,6 @@ const renderGoods = (goods) => {
       
       `);
 
-    // } else if (goodsItem.category == 'Cremas faciales') {
-    //   goodsWrapper2.insertAdjacentHTML('beforeend', `
-      
-    //   <a class="main__item card" id="${goodsItem.id}">
-    //     <div class="card__title">${goodsItem.title}</div>
-    //     <div class="card__photo">
-    //       <img class="card__image" src="${goodsItem.img}" alt="image#1">
-    //     </div>
-    //     <div class="card__description">${goodsItem.about}</div>
-    //   </a>
-      
-    //   `);
-
     };
   })
 

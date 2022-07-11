@@ -97,3 +97,20 @@ li.header__item.option4 {
   padding-top: 4px;
 
 }
+
+.services__item.card.option1 {
+  background-color: rgba(0, 0, 0, 0.54);
+  box-shadow: none;
+}
+
+.services__item.card.option2 {
+  background-color: $colorPrimary;
+  color: $colorTertiary;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+.services__item.card.option3 {
+  background-color: none none;
+  box-shadow: none;
+}
