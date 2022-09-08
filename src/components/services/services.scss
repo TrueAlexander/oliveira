@@ -10,14 +10,9 @@
     justify-content: center;
     flex-direction: column;
   }
-
-  // &__item {
-  //   flex: 0 0 40%;
-  // }
 }
 
 .card {
-  // border: 2px solid white;
   display: flex;
   align-items: center;
   color: white;
@@ -63,12 +58,6 @@
   }
 }
 
-.card:hover {
-  // transform: translateY(-10px) scale(1.04);
-  // box-shadow: 0 10px 10px $colorTertiary;
-  // transition: all 0.3s linear 0.1s;
-  // cursor: pointer;
-}
 
 @media (max-width: 1290px) {
   .services {

@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .home {
-  background-image: url("../../images/banner-principal_light.png");
+  background-image: url("../../images/banner-principal_light.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: repeat-x;
@@ -13,17 +13,13 @@
     height: 100vh;
     color: white;
     font-size: 2.4em;
-    font-family: roboto;
+    font-family: roboto, sans-serif;
     font-weight: 700;
-    text-shadow: 0 0 3px $colorPrimary;
     line-height: 1.5em;
   }
 
-  &__title {
-  }
-
   &__description {
-    background-color: $colorSecondary;
+    background-color: rgba(0, 0, 0, 0.63);
     border-radius: 8px;
     font-size: 0.6em;
     font-weight: 400;

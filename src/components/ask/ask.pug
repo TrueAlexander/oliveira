@@ -5,26 +5,18 @@
       div(data-aos="zoom-in" data-aos-duration="1800").ask__image
         img(src=require("../../../images/ask2.png"), alt="ask") 
       form.ask__form.form(action="https://formsubmit.co/caminante.msk@gmail.com" method="POST" data-aos="zoom-in" data-aos-duration="1800")
-        //- .form__label
-        //-   label(for="nome") Seu nome
         .form__input 
           input(type="text" placeholder="nome" name="nome" required)
-        //- .form__label
-        //-   label(for="telefone") Seu telefone
         .form__input
           input(type="tel" placeholder="telefone" name="telefone" required)
-        //- .form__label
-        //-   label(for="email") Seu email
         .form__input
           input(type="email" placeholder="email" name="email" required)
-        //- .form__label
-        //-   label(for="pergunta") Sua pergunta
         .form__input
-          input(type="textarea" rows="2" placeholder="sua pergunta" name="pergunta" required)
+          textarea(name="pergunta" placeholder="sua pergunta" required rows="5" cols="33" minlength="10")
         input(type="hidden" name="_subject" value="Um novo e-mail de cliente!!!!")
         input(type="hidden" name="_next" value="http://localhost:8080/emailSent.html")
         input(type="hidden" name="_template" value="table")
         input(type="hidden" name="_captcha" value="false")
-        button.form__btn.btn(type="submit") Solicitar!  
+        button.form__btn.btn(type="submit") Enviar! 
         
 

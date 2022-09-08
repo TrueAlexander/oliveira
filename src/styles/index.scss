@@ -8,8 +8,8 @@
 @use "../components/home/home";
 @use "../components/ask/ask";
 @use "../components/thanks/thanks";
+@use "../components/whatsappIcon/whatsappIcon";
 
-// @use "../components/product/product";
 
 //import fonts and variables
 @import "fonts";
@@ -17,4 +17,4 @@
 
 //reset default CSS
 @import "nullstyle";
-// @import "animate.css";
+

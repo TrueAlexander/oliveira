@@ -52,16 +52,18 @@
     }
 
     .swiper-slide.option2 {
-      font-family: montserrat;
+      font-family: montserrat, sans-serif;
       .swiper-opinion {
-        font-family: montserrat;
+        font-family: montserrat, sans-serif;
         line-height: 1.3em;
       }
     }
 
     .swiper-slide.option1 {
       background-color: $colorSecondary;
+      font-family: montserrat, sans-serif;
       .swiper-opinion {
+        font-family: montserrat, sans-serif;
         font-size: 1.5em;
         line-height: 1.3em;
       }
@@ -69,12 +71,16 @@
 
     .swiper-slide.option3 {
       background-color: rgba(0, 0, 0, 0.692);
+      font-family: montserrat, sans-serif;
+      .swiper-opinion {
+        font-family: montserrat, sans-serif;
+      }
     }
 
     .swiper-slide:hover {
       transition: all 0.3s linear 0.1s;
-      box-shadow: 0 7px 15px $colorTertiary;
-      transform: translateY(-7px) scale(1.01);
+      box-shadow: 0 4px 10px $colorSecondary;
+      transform: translateY(-4px) scale(1.01);
       cursor: grabbing;
     }
   }
@@ -95,11 +101,11 @@
     margin: 10px auto;
     font-family: julian, sans-serif;
     font-size: 1.2em;
+    font-weight: 700;
   }
 
   &-city {
     text-transform: capitalize;
-    font-weight: 700;
     font-size: 1.1em;
   }
 

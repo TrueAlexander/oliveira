@@ -1,9 +1,7 @@
 import './styles/index.scss'
 import 'animate.css'
 
-import './components/thanks/thanks'
 import './components/header/header'
-// import './components/services/services'
 import './components/obras/obras'
 import './components/opinions/opinions'
 
