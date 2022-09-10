@@ -23,8 +23,6 @@ body.lock {
   }
 
   &__nav {
-    // position: relative;
-    // z-index: 20;
     margin: auto;
     transform: translateY(70px);
     transition: all 0.8s linear 0.05s;
@@ -183,12 +181,11 @@ body.lock {
       top: -450%;
       z-index: 20;
       width: 100%;
-      transition: all 0.8s linear;
+      transition: all 0.4s linear;
     }
 
     &__list {
       display: block;
-      // background-color: #ce4709b9;
       background-color: rgba(0, 0, 0, 0.83);
       text-shadow: 0 3px 10px $colorPrimary;
       box-shadow: 0 5px 5px $colorSecondary;
@@ -196,7 +193,6 @@ body.lock {
       padding-bottom: 15px;
       position: relative;
       z-index: 20;
-      // transition: all 0.8s linear 0.05s;
     }
 
     &__item {
@@ -235,9 +231,6 @@ body.lock {
       
     }
 
-    // &__list.dropped {
-      
-    // }
 
     &__nav_burger {
       top: 28px;
@@ -246,6 +239,17 @@ body.lock {
 
     img.logo.scroll {
       height: 80px;
+    }
+  }
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+  .header {
+    &__nav {
+      overflow: auto;
+    }
+    &__list {
+      overflow: auto;
     }
   }
 }
