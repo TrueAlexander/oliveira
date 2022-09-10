@@ -178,12 +178,11 @@ body.lock {
       position: absolute;
       display: block;
       left: 0%;
-      top: -450%;
-      z-index: 20;
+      top: 41px;
+      opacity: 0;
       width: 100%;
       transition: all 0.4s linear;
     }
-
     &__list {
       display: block;
       background-color: rgba(0, 0, 0, 0.83);
@@ -192,7 +191,6 @@ body.lock {
       border-radius: 0 0 50% 50%;
       padding-bottom: 15px;
       position: relative;
-      z-index: 20;
     }
 
     &__item {
@@ -209,6 +207,7 @@ body.lock {
 
       }
     }
+
     &__item:hover {
       box-shadow: none;
     }
@@ -226,11 +225,8 @@ body.lock {
     &__nav.dropped {
       left: 0;
       top: 41px;
-      z-index: -460;
       opacity: 1;
-      
     }
-
 
     &__nav_burger {
       top: 28px;
@@ -243,19 +239,9 @@ body.lock {
   }
 }
 
-@media (max-width: 950px) and (orientation: landscape) {
-  .header {
-    &__nav {
-      overflow: auto;
-    }
-    &__list {
-      overflow: auto;
-    }
-  }
-}
-
 @media (max-width: 600px) {
   .header {
+
     img.logo {
       float: left;
       display: block;
@@ -265,6 +251,7 @@ body.lock {
       margin-left: -15px;
       margin-right: 40px;
     }
+
     &__nav_burger {
       top: 30px;
       transition: all 0.8s linear 0.05s;

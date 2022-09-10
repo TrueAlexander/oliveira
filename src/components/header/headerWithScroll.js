@@ -18,7 +18,6 @@ const headerWithScroll = () => {
     // const allLinks = []
 
     // allLinks.push(contactLink, discountLink, promotionLink, promotionBtn, creationLink, creationBtn,homeLink)
-    const homeLink = document.getElementById("homeLink")
     const links = document.querySelectorAll('.header__item a')
     links.forEach((link) => {
       link.addEventListener('click', (event) => {
