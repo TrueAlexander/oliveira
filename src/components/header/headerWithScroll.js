@@ -18,6 +18,7 @@ const headerWithScroll = () => {
     // const allLinks = []
 
     // allLinks.push(contactLink, discountLink, promotionLink, promotionBtn, creationLink, creationBtn,homeLink)
+    const homeLink = document.getElementById("homeLink")
     const links = document.querySelectorAll('.header__item a')
     links.forEach((link) => {
       link.addEventListener('click', (event) => {
@@ -45,17 +46,16 @@ const headerWithScroll = () => {
 
   const scrollingBurger = (clickedLink) => {
 
-      const homeLink = document.getElementById('home')
+      const homeLink = document.getElementById('homeLink')
 
-      console.log(clickedLink);
       const id = clickedLink.getAttribute('href').substring(13)
       const target = document.getElementById(id)
 
       if (clickedLink === homeLink) {
-        
         if (window.scrollY > 0) {
           elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
         } else {
+          console.log('reload')
           window.location.reload()
         }
 

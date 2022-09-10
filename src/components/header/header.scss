@@ -188,7 +188,8 @@ body.lock {
 
     &__list {
       display: block;
-      background-color: #ce4709b9;
+      // background-color: #ce4709b9;
+      background-color: rgba(0, 0, 0, 0.83);
       text-shadow: 0 3px 10px $colorPrimary;
       box-shadow: 0 5px 5px $colorSecondary;
       border-radius: 0 0 50% 50%;
@@ -234,9 +235,9 @@ body.lock {
       
     }
 
-    &__list.dropped {
+    // &__list.dropped {
       
-    }
+    // }
 
     &__nav_burger {
       top: 28px;
