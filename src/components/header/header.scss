@@ -23,8 +23,8 @@ body.lock {
   }
 
   &__nav {
-    position: relative;
-    z-index: 20;
+    // position: relative;
+    // z-index: 20;
     margin: auto;
     transform: translateY(70px);
     transition: all 0.8s linear 0.05s;
@@ -222,13 +222,16 @@ body.lock {
       width: 100%;
       font-size: 1.5em;
       line-height: 0.6em;
-      z-index: 370;
+      z-index: -460;
+      
     }
 
     &__nav.dropped {
       left: 0;
       top: 41px;
-      z-index: -360;
+      z-index: -460;
+      opacity: 1;
+      
     }
 
     &__list.dropped {
