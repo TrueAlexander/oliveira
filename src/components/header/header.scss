@@ -20,6 +20,8 @@ body.lock {
     height: 155px;
     padding: 0 0 10px;
     margin-right: 40px;
+    position: relative;
+    z-index: 600;
   }
 
   &__nav {
