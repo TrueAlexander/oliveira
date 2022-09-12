@@ -1,13 +1,9 @@
 import './styles/index.scss'
 import 'animate.css'
 
-
 import './components/obras/obras'
 import './components/opinions/opinions'
 
-
-
-// import scrollTo from './scrollTo'
 import antiFouc from './antiFouc'
 import headerWithScroll from './components/header/headerWithScroll'
 

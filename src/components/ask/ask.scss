@@ -62,128 +62,57 @@
 
 @media (max-width: 1060px) {
   .ask {
-    // background-color: black;
-    // text-align: center;
-    // color: white;
     font-size: 1.8em;
-    // font-family: $font-family-title, sans-serif;
-    // line-height: 1.5em;
-    // padding: 50px 0 10px;
 
     &__title {
       font-size: 0.9em;
     }
 
     &__box {
-      // display: flex;
       height: auto;
-      // align-items: center;
-      // justify-content: center;
-      // position: relative;
     }
 
     &__image {
-      // position: absolute;
       height: 200px;
       top: 40%;
-      // transform: translateY(-50%);
       left: 7%;
-
-      // img {
-      //   width: 100%;
-      //   height: 100%;
-      // }
-    }
-
-    // &__form {
-    //   flex: 0 1 50%;
-    // }
-
-    .form {
-      // &__label {
-      //   font-size: 0.8em;
-      //   text-align: center;
-      //   font-family: $font-family-subtitle;
-      //   font-weight: 400;
-      //   line-height: 2em;
-      // }
-      // &__input {
-      //   input {
-      //     width: 60%;
-      //     font-size: 0.7em;
-      //     padding: 5px 7px;
-      //     border-radius: 5px;
-      //     margin-bottom: 10px;
-      //   }
-      // }
-
-      // &__btn {
-      //   margin: 30px 0;
-      // }
     }
   }
 }
 
 @media (max-width: 700px) {
   .ask {
-    // background-color: black;
-    // text-align: center;
-    // color: white;
-    // font-size: 1.8em;
-    // font-family: $font-family-title, sans-serif;
-    // line-height: 1.5em;
-    padding: 60px 0 10px;
+    font-size: 1.8em;
 
     &__title {
-      font-size: 0.7em;
+      font-size: 0.9em;
     }
 
     &__box {
-      display: block;
       // height: auto;
-      // align-items: center;
-      // justify-content: center;
-      // position: relative;
+      display: block;
     }
 
     &__image {
-      position: relative;
-      height: 150px;
-      top: 0;
-      transform: translateY(0);
-      left: 0;
+      height: 175px;
+      text-align: center;
       margin-bottom: 15px;
-
-      // img {
-      //   width: 100%;
-      //   height: 100%;
-      // }
     }
+  }
+}
 
-    // &__form {
-    //   flex: 0 1 50%;
-    // }
-
+@media (max-width: 430px) {
+  .ask {
     .form {
-      &__label {
-        font-size: 0.7em;
-        // text-align: center;
-        // font-family: $font-family-subtitle;
-        // font-weight: 400;
-        line-height: 1.2em;
-      }
+
       &__input {
-        input {
+        input, textarea {
           width: 80%;
-          // font-size: 0.7em;
-          // padding: 4px 7px;
-          // border-radius: 5px;
-          // margin-bottom: 10px;
         }
       }
 
       &__btn {
-        margin: 20px 0;
+        margin: 10px 0 0;
       }
     }
   }

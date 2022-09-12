@@ -13,10 +13,10 @@
     z-index: 20;
   }
   .swiper-button-prev {
-    left: 5%;
+    left: 3.5%;
   }
   .swiper-button-next {
-    right: 5%;
+    right: 3.5%;
   }
 
   .swiper-button-prev:hover,
@@ -93,7 +93,7 @@
   }
   &-opinion:before,
   &-opinion:after {
-    content: ' " ';
+    content: '"';
   }
 
   &-client {
@@ -125,5 +125,24 @@
         height: auto;
       }
     }
+
+    &-opinion {
+      line-height: 1.2em;
+      font-size: 1em;
+    }
   }
+
+  .opinions {
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 68%;
+    }
+    .swiper-button-prev {
+      left: 1%;
+    }
+    .swiper-button-next {
+      right: 1%;
+    }
+  }
+ 
 }
