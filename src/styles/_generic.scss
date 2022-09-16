@@ -18,7 +18,7 @@ body {
 .sectionTitle {
   text-align: center;
   color: white;
-  font-size: 45px;
+  font-size: 40px;
   font-family: montserrat, Arial, Helvetica, sans-serif;
   letter-spacing: 0.1em;
   text-shadow: 0 0 2px $colorPrimary;
@@ -29,7 +29,7 @@ body {
   border-radius: 35px;
   border: 2px solid white;
   margin: 0 auto 60px;
-  background-color: $colorTertiary;
+  background-color: #ce4709ab;
   width: fit-content;
   box-shadow: 0 0 5px $colorSecondary, 0 0 5px #000;
 }
@@ -110,6 +110,19 @@ li.header__item.option3 {
   box-shadow: none;
 }
 
+@media (max-width: 1050px) {
+  .sectionTitle {
+    padding: 0 10px;
+    line-height: 1.3em;
+    margin-top: 120px;
+    letter-spacing: 0.08em;
+    font-size: 20px !important;
+  }
+  .title {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 700px) {
   .sectionTitle {
     padding: 0 10px;
@@ -119,7 +132,7 @@ li.header__item.option3 {
     font-size: 20px !important;
   }
   .title {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 

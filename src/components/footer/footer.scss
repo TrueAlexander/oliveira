@@ -7,14 +7,6 @@
   &__title {
     margin-top: 20px;
   }
-  &__logo {
-    position: absolute;
-    top: 65px;
-    img {
-      margin: 10px auto;
-      width: 170px;
-    }
-  }
 
   &__row {
     display: flex;
@@ -115,9 +107,6 @@
 
 @media (max-width: 700px) {
   .footer {
-    &__logo {
-      display: none;
-    }
 
     &__row {
       margin: 25px auto 50px;
