@@ -119,7 +119,11 @@ li.header__item.option3 {
     font-size: 20px !important;
   }
   .title {
+    font-weight: 400;
     font-size: 30px;
+    letter-spacing: 0.03em;
+    width: 100%;
+    padding: 0 10px;
   }
 }
 
@@ -133,6 +137,7 @@ li.header__item.option3 {
   }
   .title {
     font-size: 20px;
+    letter-spacing: 0.05em;
   }
 }
 

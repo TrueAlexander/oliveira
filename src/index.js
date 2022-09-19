@@ -1,6 +1,7 @@
 import './styles/index.scss'
 import 'animate.css'
 
+import './components/home/home'
 import './components/obras/obras'
 import './components/opinions/opinions'
 

@@ -120,11 +120,8 @@ body.lock {
     transition: all 0.8s linear 0.05s;
     transform: translateY(38px);
     font-size: 1.2em;
-    z-index: 20;
-    
-  }
-
-  
+    z-index: 20;  
+  }  
 }
 
 @media (max-width: 1100px) {
