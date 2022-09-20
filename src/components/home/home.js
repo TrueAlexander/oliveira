@@ -1,5 +1,6 @@
-import { elementScrollIntoView } from "seamless-scroll-polyfill";
-
+import { elementScrollIntoView } from "seamless-scroll-polyfill"
+const arrowDown = require("../../../images/icons/arrow-down.svg")
+const arrowUp = require("../../../images/icons/arrow-up.svg")
 const box = document.querySelector('.home__box')
 const content = document.querySelector('.home__content')
 
@@ -12,11 +13,11 @@ if (visualViewport.width > 1050) {
   
   content.insertAdjacentHTML('beforeend', `
       <p class = "home__description animate__animated animate__slideInLeft animate__slow"> A Oliveira Serviços de Engenharia nasceu da necessidade de oferecer um serviço técnico, de qualidade, com garantia e com acompanhamento desde o início até o fim da intervenção...</p>
-      <button id = "homeBtn" class="home__btn btn animate__animated animate__fadeIn animate__slower">Saber mais</button>
+      <button id = "homeBtn" class="home__btn animate__animated animate__fadeIn animate__slower"><img src=${arrowDown} alt="arrow" width="40px" height="40px"></button>
     `) 
 
-    const buttonOpened = () => button.innerText = 'Fechar'
-    const buttonClosed = () => button.innerText = 'Saber mais'
+    const buttonOpened = () => button.innerHTML = `<img src=${arrowUp} alt="arrow" width="40px" height="40px">`
+    const buttonClosed = () => button.innerHTML = `<img src=${arrowDown} alt="arrow" width="40px" height="40px">`
     
     const button = document.getElementById('homeBtn')
 
