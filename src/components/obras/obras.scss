@@ -23,7 +23,7 @@
   font-weight: 700;
   line-height: 2.6em;
   height: 50vh;
-  border:1px solid white;
+  border: 1px solid white;
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
@@ -36,6 +36,11 @@
   background-repeat: no-repeat;
   position: relative;
   transition: all 500ms ease-in-out;
+}
+
+.slide:hover {
+  border: 1px solid $colorTertiary;
+  box-shadow: 0 0 2px $colorTertiary;
 }
 
 .slide h3 {
@@ -51,7 +56,7 @@
   border-radius: 25px;
   line-height: 1.3em;
   box-shadow: 0 0 5px $colorSecondary, 0 0 5px #000;
-  font-weight: 600;
+  font-weight: 400;
   text-shadow: none;
 }
 

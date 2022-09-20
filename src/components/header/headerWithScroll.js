@@ -5,19 +5,6 @@ const headerWithScroll = () => {
 
   ////
   const scrolling = () => {
-    // const contactLink = document.querySelector('#toContacts')
-    // const promotionLink = document.getElementById('toPromotion')
-    // const creationLink = document.getElementById('toCreation')
-    // const homeLink = document.getElementById('toHome')
-
-    // const header = document.querySelector('.header')
-    // const promotionBtn = document.querySelector('.promotion__btn')
-    // const creationBtn = document.querySelector('.creation__btn')
-    // const discountLink = document.querySelector('.timer__title')
-    
-    // const allLinks = []
-
-    // allLinks.push(contactLink, discountLink, promotionLink, promotionBtn, creationLink, creationBtn,homeLink)
     const links = document.querySelectorAll('.header__item a')
     links.forEach((link) => {
       link.addEventListener('click', (event) => {
@@ -26,21 +13,8 @@ const headerWithScroll = () => {
         const id = link.getAttribute('href').substring(13)
         const target = document.getElementById(id)
         elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" });
-        // if (event.target === homeLink) {
-
-        //   if (header.classList.contains('scroll')) {
-        //     elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
-        //     console.log('scrolled');
-        //   } 
-
-        // } else {
-        //   elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
-        //   console.log('scrolled');
-        // }
       }) 
-    })  
-  
-     
+    })    
   }
 
   const scrollingBurger = (clickedLink) => {

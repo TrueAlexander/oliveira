@@ -1,6 +1,7 @@
+import { elementScrollIntoView } from "seamless-scroll-polyfill";
+
 const box = document.querySelector('.home__box')
 const content = document.querySelector('.home__content')
-
 
 if (visualViewport.width > 1050) {
 
@@ -8,6 +9,7 @@ if (visualViewport.width > 1050) {
   <p class = "home__description animate__animated animate__slideInLeft animate__slow"> A Oliveira Serviços de Engenharia nasceu da necessidade de oferecer um serviço técnico, de qualidade, com garantia e com acompanhamento desde o início até o fim da intervenção. Atuamos com excelência nas áreas de laudos extrajudiciais e autovistoria, com nossa equipe trabalhamos com dinamismo e eficiência na manutenção de condomínios e ainda oferecemos um grande portifólio de atividades. Com apoio da nossa equipe atuamos na manutenção de fachadas, adequação de barriletes de acordo com a ABNT NBR 5626 e Impermeabilização. Atendemos a todo o Rio de Janeiro com uma visão única que possibilita a todos os nossos clientes, parceiros e amigos ter segurança técnica, fundamentada nas normas vigentes atuais, e segurança financeira, tudo para que o resultado seja alcançado.</p>
     `)
 } else {
+  
   content.insertAdjacentHTML('beforeend', `
       <p class = "home__description animate__animated animate__slideInLeft animate__slow"> A Oliveira Serviços de Engenharia nasceu da necessidade de oferecer um serviço técnico, de qualidade, com garantia e com acompanhamento desde o início até o fim da intervenção...</p>
       <button id = "homeBtn" class="home__btn btn animate__animated animate__fadeIn animate__slower">Saber mais</button>
@@ -33,7 +35,9 @@ if (visualViewport.width > 1050) {
             <p class = "home__description animate__animated animate__fadeIn animate__slower"> A Oliveira Serviços de Engenharia nasceu da necessidade de oferecer um serviço técnico, de qualidade, com garantia e com acompanhamento desde o início até o fim da intervenção. Atuamos com excelência nas áreas de laudos extrajudiciais e autovistoria, com nossa equipe trabalhamos com dinamismo e eficiência na manutenção de condomínios e ainda oferecemos um grande portifólio de atividades. Com apoio da nossa equipe atuamos na manutenção de fachadas, adequação de barriletes de acordo com a ABNT NBR 5626 e Impermeabilização. Atendemos a todo o Rio de Janeiro com uma visão única que possibilita a todos os nossos clientes, parceiros e amigos ter segurança técnica, fundamentada nas normas vigentes atuais, e segurança financeira, tudo para que o resultado seja alcançado.</p>
               `)
       } else {
+        const target = document.getElementById('home')
         buttonClosed()
+        elementScrollIntoView(target, { behavior: "smooth", block: "start" , inline: "center" })
         box.style.height = '100vh'
         box.style.paddingTop = '125px'
         description.insertAdjacentHTML('beforeend', `
@@ -41,8 +45,6 @@ if (visualViewport.width > 1050) {
               `) 
       } 
     })
+  } 
 
-  }  
-
-  // animate__animated animate__fadeInUp animate__slow
-  // animate__animated animate__fadeIn animate__slower
+  

@@ -2,6 +2,8 @@
 
 .ask {
   background-color: $colorPrimary;
+  // background-image: url("/images/fundo-5.jpg");
+  // background-position: center;
   text-align: center;
   color: white;
   font-size: 2em;
@@ -96,6 +98,7 @@
       height: 300px;
       text-align: center;
       margin-bottom: 15px;
+      margin-bottom: -7px;
     }
   }
 }
