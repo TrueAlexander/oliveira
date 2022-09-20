@@ -35,7 +35,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.3em;
-    padding: 10px 15px 0;
+    padding: 10px 15px;
     text-align: justify;
     text-indent: 25px;
   }
@@ -53,6 +53,7 @@
 
 
 @media (max-width: 1050px) {
+
   .home {
     &__box {
       font-size: 2em;
@@ -65,15 +66,15 @@
     }    
 
     &__description {
-
       --animate-duration: 0.9s;
       transition: all 0.4s linear;
       height: fit-content;
       overflow: hidden;
+      padding: 10px 15px 0;
     }
-
   }
 }
+
 @media (max-width: 500px) {
   .home {
     &__box {

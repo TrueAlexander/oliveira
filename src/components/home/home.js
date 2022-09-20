@@ -20,7 +20,6 @@ if (visualViewport.width > 1050) {
     const buttonClosed = () => button.innerHTML = `<img src=${arrowDown} alt="arrow" width="40px" height="40px">`
     
     const button = document.getElementById('homeBtn')
-
     const description = document.querySelector('.home__description')
 
     button.addEventListener('click', () => {
