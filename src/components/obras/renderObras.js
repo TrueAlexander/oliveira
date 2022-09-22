@@ -6,27 +6,32 @@ const renderObras = () => {
       {
         title: 'Telhados',
         imgPath: 'https://i.ibb.co/qr03cYf/Telhados01.png',
-        active: false
+        active: false,
+        link: './telhados.html'
       },
       {
         title: 'Recuperação da Fachada',
         imgPath: 'https://i.ibb.co/VN0srkF/Recuperacao-de-Fachada01.png',
-        active: true
+        active: true,
+        link: './fachadas.html'
       },
       {
         title: 'Pintura',
         imgPath: 'https://i.ibb.co/bHP2yjT/Pinturas.png',
-        active: false
+        active: false,
+        link: './pinturas.html'
       },
       {
         title: 'Serviços Eletricos',
         imgPath: 'https://i.ibb.co/YL6t5k8/Servicos-Eletricos.png',
-        active: false
+        active: false,
+        link: './eletricas.html'
       },
       {
         title: 'Instalação Spa e Hidromassagens',
         imgPath: 'https://i.ibb.co/1KK5qg8/Instalacao-de-Hidro-e-Spa02.png',
-        active: false
+        active: false,
+        link: './spas.html'
       },
     ]
   
@@ -36,7 +41,7 @@ const renderObras = () => {
           <h3>
             ${item.title}
           </h3>
-          <a class="slide__link" href="./telhados.html">Clique para ver mais</a>
+          <a class="slide__link" href=${item.link}>Clique aqui para ver mais</a>
         </div>
       
       `)

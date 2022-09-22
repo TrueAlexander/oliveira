@@ -37,18 +37,23 @@ module.exports = {
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
-      filename: 'banheiros.html',
-      template: 'src/banheiros.pug',
+      filename: 'spas.html',
+      template: 'src/spas.pug',
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
-      filename: 'impermeabilizacoes.html',
-      template: 'src/impermeabilizacoes.pug',
+      filename: 'fachadas.html',
+      template: 'src/fachadas.pug',
       favicon: 'src/favicon.ico',
     }),
     new HtmlWebpackPlugin({
       filename: 'pinturas.html',
       template: 'src/pinturas.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'eletricas.html',
+      template: 'src/eletricas.pug',
       favicon: 'src/favicon.ico',
     }),
   ],
