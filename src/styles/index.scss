@@ -5,11 +5,12 @@
 @use "../components/services/services";
 @use "../components/opinions/opinions";
 @use "../components/obras/obras";
+@use "../components/imagesObras/telhado";
+@use "../components/imagesObras/banheiro";
 @use "../components/home/home";
 @use "../components/ask/ask";
 @use "../components/thanks/thanks";
 @use "../components/whatsappIcon/whatsappIcon";
-
 
 //import fonts and variables
 @import "fonts";
@@ -17,4 +18,3 @@
 
 //reset default CSS
 @import "nullstyle";
-

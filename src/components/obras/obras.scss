@@ -15,7 +15,6 @@
     display: flex;
     padding: 0 20px;
   }
-
 }
 
 .slide {
@@ -36,6 +35,22 @@
   background-repeat: no-repeat;
   position: relative;
   transition: all 500ms ease-in-out;
+
+  &__link {
+    color: white;
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity 0.3s ease-in 0.4s;
+    background-color: $colorSecondary;
+    padding: 0px 7px;
+    border-radius: 25px;
+  }
+
+  &__link:hover {
+    background-color: rgba(0, 0, 0, 0.468);
+    transition: opacity 0.3s ease-in 0.4s;
+  }
 }
 
 .slide:hover {
@@ -62,12 +77,20 @@
 
 .slide.active {
   flex: 9;
+  cursor: auto;
 }
 
 .slide.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
+
+.slide.active .slide__link {
+  opacity: 1;
+  transition: opacity 1.2s ease-in 0.8s;
+}
+
+
 
 @media (max-width: 883px) {
   .obras {
@@ -89,6 +112,10 @@
     border: 1px solid white;
     margin: 0 10px 45px;
     border-radius: 7px;
+
+    &__link {
+      opacity: 1;
+    }
   }
   
   .slide h3 {

@@ -30,6 +30,11 @@ module.exports = {
       filename: 'emailSent.html',
       template: 'src/emailSent.pug',
       favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'telhados.html',
+      template: 'src/telhados.pug',
+      favicon: 'src/favicon.ico',
     })
   ],
   devServer: {

@@ -29,6 +29,7 @@ if (visualViewport.width > 1050) {
 
       if (button.classList.contains('opened')) {
         buttonOpened()
+        box.style.minHeight = '100vh'
         box.style.height = 'auto'
         box.style.paddingTop = '150px'
         description.insertAdjacentHTML('beforeend', `

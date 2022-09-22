@@ -225,6 +225,7 @@ body.lock {
       top: 41px;
       display: block;
       opacity: 1;
+      transition: all 0.8s linear 0.05s;
     }
 
     &__nav_burger {
