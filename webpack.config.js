@@ -35,7 +35,22 @@ module.exports = {
       filename: 'telhados.html',
       template: 'src/telhados.pug',
       favicon: 'src/favicon.ico',
-    })
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'banheiros.html',
+      template: 'src/banheiros.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'impermeabilizacoes.html',
+      template: 'src/impermeabilizacoes.pug',
+      favicon: 'src/favicon.ico',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'pinturas.html',
+      template: 'src/pinturas.pug',
+      favicon: 'src/favicon.ico',
+    }),
   ],
   devServer: {
     static: './src/index.pug',
