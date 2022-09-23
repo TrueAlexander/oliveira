@@ -37,7 +37,7 @@ const renderObras = () => {
   
     obrasImages.forEach((item) => {
       obrasBox.insertAdjacentHTML('beforeend', `
-        <div class="slide ${item.active ? 'active' : ''}" style = "background-image: url(${item.imgPath});">
+        <div title=${item.title} class="slide ${item.active ? 'active' : ''}" style = "background-image: url(${item.imgPath});">
           <h3>
             ${item.title}
           </h3>

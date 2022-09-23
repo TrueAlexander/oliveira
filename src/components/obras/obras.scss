@@ -45,6 +45,7 @@
     background-color: $colorSecondary;
     padding: 0px 7px;
     border-radius: 25px;
+    pointer-events: none;
   }
 
   &__link:hover {
@@ -87,9 +88,9 @@
 
 .slide.active .slide__link {
   opacity: 1;
+  pointer-events: all;
   transition: opacity 1.2s ease-in 0.8s;
 }
-
 
 
 @media (max-width: 883px) {

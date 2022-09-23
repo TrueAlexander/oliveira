@@ -43,7 +43,7 @@
       overflow: hidden;
       border: 7px solid $colorLightGrey;
       border-radius: 20px;
-      padding: 15px;
+      padding: 10px 15px 15px;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -90,10 +90,9 @@
     line-height: 1.4em;
     font-size: 1.3em;
     flex: 1 1 auto;
-  }
-  &-opinion:before,
-  &-opinion:after {
-    content: '"';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &-client {
