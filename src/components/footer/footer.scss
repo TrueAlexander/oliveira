@@ -33,13 +33,12 @@
       width: fit-content;
       margin-right: 15px;   
     }
+
     p {
       font-size: 18px;
       font-family: $font-family-description;
       font-weight: 400;
     }
-
-    
   }
 
   &__item:hover {
@@ -128,6 +127,17 @@
       img {
         height: 70%;
         margin-right: 6px;
+      }
+    }
+
+    &__item:hover {
+      transform: none;
+      img {
+        // border-radius: 50%;
+        box-shadow: inherit;
+      }
+      p {
+        text-shadow: inherit;
       }
     }
   }

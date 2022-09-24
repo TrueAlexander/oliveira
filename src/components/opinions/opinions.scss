@@ -123,6 +123,10 @@
       .swiper-slide {
         height: auto;
       }
+      .swiper-slide:hover {
+        box-shadow: none;
+        transform: none;
+      }
     }
 
     &-opinion {
@@ -143,5 +147,6 @@
       right: 1%;
     }
   }
- 
+  
+
 }

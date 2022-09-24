@@ -207,6 +207,8 @@ body.lock {
 
     &__item:hover {
       box-shadow: none;
+      transform: none;
+      text-shadow: inherit;
     }
   }
 
