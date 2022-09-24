@@ -14,3 +14,10 @@
   padding: 2px 7px;
   transform: scale(0.9);
 }
+
+@media (max-width:1000px) {
+  .backButton button {
+    font-size: 14px;
+    padding: 0 6px;
+  }  
+}

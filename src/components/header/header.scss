@@ -16,10 +16,9 @@ body.lock {
     transition: all 0.8s linear 0.05s;
     float: left;
     display: block;
-    margin-top: 10px;
     height: 145px;
-    padding: 10px 0 10px 10px;
-    margin-right: 40px;
+    padding: 10px 0 10px 20px;
+    margin: 10px 0 0 40px;
     position: relative;
     z-index: 600;
   }
@@ -112,7 +111,7 @@ body.lock {
   img.logo.scroll {
     transition: all 0.8s linear 0.05s;
     height: 100px;
-    padding: 7px 0 3px;
+    padding: 7px 0 3px 15px;
     margin-top: 0;
   }
 
@@ -247,7 +246,7 @@ body.lock {
       display: block;
       margin-top: 10px;
       height: 70px;
-      padding: 0 0 0;
+      padding: 0 0 0 7px;
       margin-left: 10px;
       margin-right: 40px;
     }
