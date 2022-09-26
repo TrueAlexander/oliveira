@@ -1,12 +1,15 @@
 @import "../../styles/variables";
 
 .thanks {
- 
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-image: url("/images/fundo03.jpg");
+  background-position: center;
+  height: 100vh;
   
   &__box {
     padding: 20px;
@@ -20,24 +23,21 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    border: 1px solid $colorTertiary;
 
     h1 {
-      color: $colorTertiary;
-      text-shadow: 0 0 5px white;
       line-height: 1.3em;
       font-size: 2em;
       font-family: $font-family-title, Arial, Helvetica, sans-serif;
-      margin: 10px 0;
+      margin: 20px auto;
       font-weight: 700;
-
     }
   }
   &__btn {
     margin: 50px auto 0;
-    // transform: scale(1.3);
     width: fit-content;
     padding: 10px 15px;
- 
+    transform: scale(0.95);
   }
 }
 
@@ -46,15 +46,14 @@
     &__box {
       
       h1 {
-        font-size: 1.5em;
+        font-size: 15px !important;
+        font-weight: normal;
         line-height: 1.1em;
-        margin: 7px 0;
       }
     }
 
     &__btn {
       margin: 25px auto 0;
-      transform: scale(1.2);
     }
   }
 }

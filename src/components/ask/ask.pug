@@ -4,11 +4,11 @@
     .ask__box
       div(data-aos="zoom-in" data-aos-duration="1800").ask__image
         img(src=require("../../../images/girl.png"), alt="ask") 
-      form.ask__form.form(action="https://formsubmit.co/caminante.msk@gmail.com" method="POST" data-aos="zoom-in" data-aos-duration="1800")
+      form.ask__form.form(action="https://formsubmit.co/caminante.msk@gmail.com" method="POST")
         .form__input 
           input(type="text" placeholder="nome" name="nome" required)
         .form__input
-          input(type="number" placeholder="telefone" name="telefone" min="9" max="13" required)
+          input(type="number" placeholder="telefone" name="telefone" minlength="9" maxlength="13" required)
         .form__input
           input(type="email" placeholder="email" name="email" required)
         .form__input
