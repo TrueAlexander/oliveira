@@ -7,7 +7,6 @@ import opinions from './components/opinions/opinions'
 
 import antiFouc from './antiFouc'
 import headerWithScroll from './components/header/headerWithScroll'
-
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
