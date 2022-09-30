@@ -75,18 +75,22 @@
   }
 }
 
+
+/////
+@media (max-width: 900px) and (orientation: landscape) {
+  .home {
+    &__box {
+      padding-top: 150px !important;
+      display: block !important;
+    }
+  }
+}
+
+
 @media (max-width: 500px) {
   .home {
     &__box {
       padding: 15px;
-    }
-  }
-}
-/////
-@media (max-width: 500px) and (orientation: landscape) {
-  .home {
-    &__box {
-      display: block;
     }
   }
 }
