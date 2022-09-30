@@ -82,3 +82,11 @@
     }
   }
 }
+/////
+@media (max-width: 500px) and (orientation: landscape) {
+  .home {
+    &__box {
+      display: block;
+    }
+  }
+}
